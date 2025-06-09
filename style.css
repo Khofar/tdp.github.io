@@ -32,9 +32,18 @@
   align-items: center;
   z-index: 1000;
 }
-
-1000;
+.modal-content {
+  width: auto;
+  height: auto;
+  max-width: 120vw;
+  max-height: 101vh;
+  display:block ;
+  margin: 0;
+  border: 4px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px white;
 }
+
 
 .close {
   position: absolute;
