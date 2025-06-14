@@ -1,6 +1,18 @@
 // script.js
 
 // Grab elements
+
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menuLinks");
+  
+  if (hamburger && menu) {
+    hamburger.addEventListener("click", () => {
+      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+    });
+  }
+});
+
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
 const closeBtn = document.querySelector(".close");
@@ -91,10 +103,3 @@ function animateSparks() {
 
 createSparks(40);
 animateSparks();
-
-  const hamburger = document.getElementById("hamburger");
-  const menu = document.getElementById("menuLinks");
-
-  hamburger.addEventListener("click", () => {
-    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-  });
