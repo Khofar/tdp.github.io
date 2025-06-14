@@ -91,3 +91,11 @@ function animateSparks() {
 
 createSparks(40);
 animateSparks();
+
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menuLinks");
+
+  hamburger.addEventListener("click", () => {
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+  });
+<
