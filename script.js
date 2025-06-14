@@ -98,4 +98,3 @@ animateSparks();
   hamburger.addEventListener("click", () => {
     menu.style.display = menu.style.display === "flex" ? "none" : "flex";
   });
-<
