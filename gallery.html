@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Gallery Page</title>
+	<link rel="stylesheet" href="style.css" />
+	
+	<style>
+	.menu-wrapper {
+	position: fixed;
+	padding: 10px 0;
+z-index: 1000;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+.menu-links a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 25px;
+	transition: 0.3s;
+}
+
+		a.glow-effect {
+			width: 90%;
+			max-width: 600px;
+			height: auto;
+			margin: 40px auto;
+			display: block;
+			border-radius: 20px;
+			box-shadow:
+				0 0 20px #00ffff, 0 0 40px #00ffff;
+		}
+		
+		img.kho-effect {
+			width: 130%;
+			max-width: 400px;
+			height: auto;
+			margin: 40px auto;
+			display: block;
+			border-radius: 20px;
+			box-shadow:
+				1px 1px 0px #ff0000,
+				2px 2px 1px #aa00ff,
+				3px 3px 2px #5500ff,
+				4px 4px 3px #0000ff,
+				5px 5px 4px #000,
+				0 0 10px red,
+				0 0 20px red,
+				0 0 30px red;
+			animation: khopulse 1s infinite alternate;
+			backdrop-filter: blur(10px);
+		}
+		
+		@keyframes khopulse {
+			from {
+				box-shadow:
+					0px 0px 0px #ff0000,
+					2px 2px 1px #aa00ff,
+					3px 3px 2px #5500ff,
+					4px 4px 3px #0000ff,
+					5px 5px 4px #000,
+					0 0 5px red,
+					0 0 10px red,
+					0 0 15px red;
+			}
+			
+			to {
+				box-shadow:
+					2px 2px 1px #ff0000,
+					3px 3px 2px #aa00ff,
+					4px 4px 3px #5500ff,
+					5px 5px 4px #0000ff,
+					6px 6px 5px #000,
+					0 0 10px gold,
+					0 0 20px gold,
+					0 0 30px gold;
+			}
+		}
+		
+		.back-link {
+			display: inline-block;
+			margin-top: 30px;
+			background: #ffcc00;
+			color: #000;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 5px;
+			transition: 0.3s;
+		}
+		
+		.back-link:hover {
+			background: #ff9900;
+		}
+		
+		body {
+		padding-top: 80px;
+			margin: 0 auto;
+			font-family: "Arial", sans-serif;
+			text-align: center;
+			background-image: url("https://darkflash-image-cloud.s3.us-west-2.amazonaws.com/cdn/article/attach/000000000000103/202412230027767.png");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="menu-wrapper">
+		<div id="hamburger" class="hamburger" style="width: 60px ; height: 40px">
+			<span></span><span></span><span></span>
+		</div>
+		<nav class="menu-links" id="menuLinks">
+			<a href="index.html">Home🏠</a>
+			<a href="table.html">Players🧍</a>
+			<a href="gallery.html">Gallery📷</a>
+			<a href="about.html">Aboutℹ️</a>
+			<a href="contact.html">Contact📧</a>
+			<a href="chat.html">Chatting💬</a>
+			<a href="event.html">EVENTS🎪</a>
+			
+		</nav>
+	</div>
+	
+	<h1>Image Gallery</h1>
+	
+	<div class="gallery-container">
+		<img <img class="kho-effect" style="border-radius: 30px;" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/IMG_2587.jpg" alt="Gallery Image 1" />
+		<img <img class="kho-effect" style="border-radius: 30px;" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/IMG_2588.jpg" alt="Gallery Image 2" />
+		<img class="kho-effect" style="border-radius: 30px;" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/IMG_2589.jpg" alt="Gallery Image 3" />
+		<img class="kho-effect" style="border-radius: 30px;" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/IMG_2590.jpg" alt="Gallery Image 4" />
+		<img class="kho-effect" style="border-radius: 30px;" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/IMG_2612.jpg" alt="Gallery Image 5" />
+		<img class="kho-effect" style="border-radius: 30px;" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/IMG_2599.jpg" alt="Gallery Image 5" />
+		
+	</div>
+	<img style="border-radius: 30px;border: 4px solid red" class="glow-effect centered-gif" src="https://media1.tenor.com/m/t1KbzWJ9sGkAAAAd/elden-ring-action-rpg.gif" />
+	
+	<div id="modal" class="modal">
+		<span class="close" onclick="closeModal()">&times;</span>
+		<img id="modal-img" class="modal-content" alt="" />
+	</div>
+	
+	<a class="back-link  glow-effect" style="font-size:30px ; color:red" href="index.html">⬅ Back to Main Page</a>
+	
+	<script src="script.js"></script>
+	<!-- ✅ Include JS -->
+</body>
+
+</html>
