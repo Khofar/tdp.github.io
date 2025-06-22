@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Crown Info Viewer</title>
+		<link rel="stylesheet" href="style.css" />
+	<script src="script.js"></script>
+	<style>
+	.menu-wrapper {
+	position: fixed;
+	padding: 10px 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.menu-links a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 10px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+		body {
+			background-color: black;
+			color: white;
+			font-family: 'Orbitron', sans-serif;
+			text-align: center;
+			padding: 30px;
+		}
+		
+		span {
+		background-color: red;
+		border: 2px solid lightblue;
+		border-radius: 20px;
+		}
+		
+		p {
+		font-size: 40px;
+		color: greenyellow;
+		}
+		
+		h1 {
+			font-size: 60px;
+		}
+		
+		.shadow-text {
+			text-shadow:
+			0 0 5px #8254FF,
+			0 0 10px #8254FF,
+			0 0 15px #8254FF;
+			animation: textpulse 1s infinite alternate;
+			backdrop-filter: (10px);
+		}
+		@keyframes textpulse {
+		from {
+			text-shadow:
+			0 0 5px #8254FF,
+			0 0 10px #8254FF,
+			0 0 15px #8254FF;
+		}
+		to {
+			text-shadow:
+			0 0 10px #8254FF,
+			0 0 20px #8254FF,
+			0 0 30px #8254FF;
+		 }
+		}
+		iframe {
+			border: 3px solid crimson;
+			border-radius: 10px;
+			width: 90%;
+			height: 800px;
+			box-shadow: 0 0 15px crimson;
+		}
+		#downloadBtn {
+	display: inline-block;
+	background-color: #222;
+	color: crimson;
+	padding: 12px 20px;
+	margin-top: 20px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	border: 2px solid crimson;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	box-shadow: 0 0 10px crimson;
+}
+
+#downloadBtn:hover {
+	background-color: crimson;
+	color: white;
+	box-shadow: 0 0 20px crimson;
+}
+	</style>
+</head>
+
+<body>
+		<div class="menu-wrapper">
+		<div style="width: 60px ; height: 60px" id="hamburger" class="hamburger">
+			<span></span><span></span><span></span>
+		</div>
+		<nav class="menu-links" id="menuLinks">
+			<a href="index.html">Home 🏠</a>
+			<a href="table.html">Players 🧍</a>
+			<a href="gallery.html">Gallery 📷</a>
+			<a href="about.html">About ℹ️</a>
+			<a href="contact.html">Contact 📧</a>
+			<a href="chat.html">Chatting 💬</a>
+			<a href="event.html">EVENTS 🎪</a>
+      <a href="crown.html">Crown 👑</a>
+		</nav>
+	</div>
+	<h1 class="shadow-text">👑 Crown Information</h1>
+	<p> <span>  Scroll through the sacred guide below:  </span> </p>
+	<br>
+	<iframe class="box1-effect" src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Khofar/tdp.github.io/main/Folder/Crown%20Information-%20MADE%20BY%20(KAHLITA).pdf&embedded=true" width="100%" height="800px">
+	</iframe>
+	<br><br>
+	<p>
+		<a class="box1-effect" href="https://raw.githubusercontent.com/Khofar/tdp.github.io/main/Folder/Crown%20Information-%20MADE%20BY%20(KAHLITA).pdf" download id="downloadBtn">
+   💾 Save the Crown Scroll
+</a>
+	</p>
+</body>
+
+</html>

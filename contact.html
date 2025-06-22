@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Contact | TDP Alliance</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		body {
+			background: #000;
+			color: #fff;
+			font-family: "Orbitron", sans-serif;
+			text-align: center;
+			padding: 20px;
+		}
+		
+		a.kho-effect {
+			width: 90%;
+			max-width: 600px;
+			height: auto;
+			margin: 40px auto;
+			display: block;
+			border-radius: 20px;
+			box-shadow:
+				0 0 10px red,
+				0 0 15px red,
+				0 0 30px red;
+			animation: khopulse 1s infinite alternate;
+			backdrop-filter: blur(10px);
+		}
+		
+		@keyframes khopulse {
+			from {
+				box-shadow:
+					0 0 10px red,
+					0 0 15px red,
+					0 0 15px red;
+			}
+			
+			to {
+				box-shadow:
+					0 0 15px lightseagreen,
+					0 0 25px lightseagreen,
+					0 0 40px lightseagreen;
+			}
+		}
+		
+		h1 {
+			color: #ffcc00;
+			text-shadow:
+				0 0 5px greenyellow,
+				0 0 10px greenyellow,
+				0 0 15px greenyellow;
+			animation: textpulse 0.5s infinite alternate;
+			backdrop-filter: blur(10px);
+		}
+		
+		@keyframes textpulse {
+			from {
+				text-shadow:
+					0 0 5px greenyellow,
+					0 0 10px greenyellow,
+					0 0 15px greenyellow;
+			}
+			
+			to {
+				text-shadow:
+					0 0 15px green,
+					0 0 20px green,
+					0 0 30px green;
+			}
+		}
+		
+		.contact-box {
+			background: rgba(0, 0, 0, 0.37);
+			border: 2px solid #FF0606;
+			border-radius: 60px;
+			padding: 25px;
+			max-width: 700px;
+			margin: auto;
+			box-shadow:
+				0 0 5px lightseagreen,
+				0 0 15px lightseagreen,
+				0 0 30px lightseagreen;
+			animation: boxpulse 1s infinite alternate;
+			backdrop-filter: blur(10px);
+		}
+		
+		@keyframes boxpulse {
+			from {
+				box-shadow:
+					0 0 5px lightseagreen,
+					0 0 10px lightseagreen,
+					0 0 15px lightseagreen;
+			}
+			
+			to {
+				box-shadow:
+					0 0 10px #FF0000,
+					0 0 25px #FF0000,
+					0 0 40px #FF0000;
+			}
+		}
+		
+		p {
+			font-size: 1.1rem;
+			color: #ECBC9D;
+			text-shadow: 0 0 3px red, 0 0 5px red;
+			
+		}
+		
+		a {
+			color: #00ffff;
+			text-decoration: none;
+		}
+		
+		.back-link {
+			display: inline-block;
+			margin-top: 30px;
+			background: #00ffff;
+			color: #000;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-weight: bold;
+			border-radius: 5px;
+			
+		}
+		
+		.back-link:hover {
+			background: #00cccc;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="menu-wrapper">
+		<div id="hamburger" class="hamburger">
+			<span></span><span></span><span></span>
+		</div>
+		<nav class="menu-links" id="menuLinks">
+			<a href="index.html">Home 🏠</a>
+			<a href="table.html">Players 🧍</a>
+			<a href="gallery.html">Gallery 📷</a>
+			<a href="about.html">About ℹ️</a>
+			<a href="contact.html">Contact 📧</a>
+			<a href="chat.html">Chatting 💬</a>
+			<a href="event.html">EVENTS 🎪</a>
+			<a href="crown.html">Crown 👑</a>
+		</nav>
+	</div>
+	
+	<h1>📞 Contact Us</h1>
+	<div class="contact-box">
+		<p style="color: orangered">⬇️CLICK HERE⬇️</p>
+		<p>
+			Email:
+			<a href="mailto:khodorfardous@gmail.com">criminal-tdp@gmail.com</a>
+		</p>
+		<p style="color: orangered">⬇️CLICK HERE⬇️</p>
+		<p>
+			Discord:
+			<a style="color: #ff00ff" href="https://discord.gg/2aFVxBBX" target="_blank">TDP SERVER (optional)</a>
+		</p>
+	</div>
+	<hr>
+	<img class="glow-effect" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/F9643F84-7067-458A-91F8-CA8DC673A485.png" alt="TDP Logo" style="height: 200px;" />
+	
+	<a class="back-link kho-effect" style="width: 200px;" href="index.html">⬅ Back to Main Page</a>
+	<script src="script.js"></script>
+</body>
+
+</html>
