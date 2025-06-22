@@ -7,22 +7,24 @@
 	<link rel="stylesheet" href="style.css" />
 	<style>
 		.menu-wrapper {
-	position: fixed;
-	padding: 10px 0;
-z-index: 1000;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-}
-.menu-links a {
-	color: white;
-	text-decoration: none;
-	font-weight: bold;
-	padding: 10px;
-	font-size: 25px;
-	transition: 0.3s;
-}
-    body {
+			position: fixed;
+			padding: 10px 0;
+			z-index: 1000;
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		
+		.menu-links a {
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 10px;
+			font-size: 25px;
+			transition: 0.3s;
+		}
+		
+		body {
 			background: linear-gradient(135deg, #0f0f0f 0%, #1a0000 100%);
 			color: red;
 			font-family: "Orbitron", sans-serif;
@@ -39,6 +41,13 @@ flex-wrap: wrap;
 			display: block;
 			border-radius: 20px;
 			box-shadow: 0 0 20px darkorange, 0 0 40px darkorange;
+		}
+		
+		.highlights {
+			color: darkturquoise;
+			font-weight: bold;
+			font-family: monospace;
+			width: 40px;
 		}
 		
 		h1 {
@@ -82,6 +91,7 @@ flex-wrap: wrap;
 			color: white;
 			font-size: 1.5em;
 			font-weight: bold;
+			
 		}
 		
 		th,
@@ -92,9 +102,13 @@ flex-wrap: wrap;
 		
 		th,
 		td {
-			border: 1px solid #ff9900;
+			border: 2px solid #FF630061;
 			padding: 10px;
 			text-align: center;
+			text-transform: uppercase;
+			box-shadow: 
+			0 0 5px orangered,
+			0 0 10px orangered;
 		}
 		
 		th {
@@ -133,8 +147,7 @@ flex-wrap: wrap;
 <body>
 	
 	<div class="menu-wrapper">
-		<div id="hamburger" class="hamburger"
-		style="width: 60px ; height: 40px">
+		<div id="hamburger" class="hamburger" style="width: 60px ; height: 40px">
 			<span></span><span></span><span></span>
 		</div>
 		<nav class="menu-links" id="menuLinks">
@@ -156,6 +169,7 @@ flex-wrap: wrap;
 		<table>
 			<thead>
 				<tr>
+					<th>NUMBER</th>
 					<th>NAME</th>
 					<th>LEVEL</th>
 					<th>RANK</th>
@@ -163,107 +177,129 @@ flex-wrap: wrap;
 			</thead>
 			<tbody>
 				<tr>
-					<td>1-CRIMINAL</td>
+					
+					<td class="highlights">1</td>
+					<td>CRIMINAL</td>
 					<td>43</td>
 					<td style="color: orangered;">R5</td>
 				</tr>
 				<tr>
-					<td>2-OUSCAFF</td>
+          <td class="highlights">2</td>
+					<td>OUSCAFF</td>
 					<td>43</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>3-KAHLITA</td>
+					<td class="highlights">3</td>
+					<td>KAHLITA</td>
 					<td>42</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>4-LUZ</td>
+					<td class="highlights">4</td>
+					<td>LUZ</td>
 					<td>39</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>5-ANJI</td>
+					<td class="highlights">5</td>
+					<td>ANJI</td>
 					<td>38</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>6-EMEF</td>
+					<td class="highlights">6</td>
+					<td>EMEF</td>
 					<td>39</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>7-BRON</td>
+					<td class="highlights">7</td>
+					<td>BRON</td>
 					<td>39</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>8-DIEGO</td>
+					<td class="highlights">8</td>
+					<td>DIEGO</td>
 					<td>39</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>9-RC1</td>
+					<td class="highlights">9</td>
+					<td>RC1</td>
 					<td>39</td>
 					<td style="color: lawngreen;">R4</td>
 				</tr>
 				<tr>
-					<td>10-DARTH</td>
-					<td>38</td>
-					<td style="color: magenta">R3</td>
-				</tr>
-				<tr>
-					<td>11-FURIOSSA</td>
-					<td>38</td>
-					<td style="color: magenta">R3</td>
-				</tr>
-				<tr>
-					<td>12-BROWNY</td>
+					<td class="highlights">10</td>
+					<td>DARTH</td>
 					<td>38</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>13-LISA</td>
+					<td class="highlights">11</td>
+					<td>FURIOSSA</td>
+					<td>38</td>
+					<td style="color: magenta">R3</td>
+				</tr>
+				<tr>
+					<td class="highlights">12</td>
+					<td>BROWNY</td>
+					<td>38</td>
+					<td style="color: magenta">R3</td>
+				</tr>
+				<tr>
+					<td class="highlights">13</td>
+					<td>LISA</td>
 					<td>37</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>14-MARUF</td>
+					<td class="highlights">14</td>
+					<td>MARUF</td>
 					<td>37</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>15-KOLTUR</td>
+					<td class="highlights">15</td>
+					<td>KOLTUR</td>
 					<td>36</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>16-KAI</td>
+					<td class="highlights">16</td>
+					<td>KAI</td>
 					<td>💀</td>
 					<td>💀</td>
 				</tr>
 				<tr>
-					<td>17-LE BAUROU</td>
+					<td class="highlights">17</td>
+					<td>LE BAUROU</td>
 					<td>36</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>18-игорь59</td>
+					<td class="highlights">18</td>
+					<td>игорь59</td>
 					<td>36</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>19-HEXATAL</td>
+					<td class="highlights">19</td>
+					<td>HEXATAL</td>
 					<td>37</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>20-真夜中</td>
+					<td class="highlights">20</td>
+					<td>真夜中</td>
 					<td>35</td>
 					<td style="color: magenta">R3</td>
 				</tr>
 				<tr>
-					<td>21-ARES 2</td>
+					<td class="highlights">21</td>
+					<td>ARES 2</td>
 					<td>33</td>
 					<td style="color: magenta">R3</td>
 				</tr>
