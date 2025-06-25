@@ -8,13 +8,22 @@
 	<link rel="stylesheet" href="style.css" />
 	<style>
 		body {
-			background-image: url('https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/photos/IMG_2930.png');
 			color: #fff;
 			font-family: "Orbitron", sans-serif;
 			text-align: center;
 			padding: 20px;
 		}
 		
+		#galaxy-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+	background: #000;
+}
+
 		a.kho-effect {
 			width: 90%;
 			max-width: 600px;
@@ -137,6 +146,8 @@
 </head>
 
 <body>
+	<canvas id="galaxy-bg"></canvas>
+	
 	<div class="menu-wrapper">
 		<div id="hamburger" class="hamburger">
 			<span></span><span></span><span></span>
@@ -173,6 +184,8 @@
 	
 	<a class="back-link kho-effect" style="width: 200px;" href="index.html">⬅ Back to Main Page</a>
 	<script src="script.js"></script>
+	<script src="stars.js"></script>
+	
 </body>
 
 </html>

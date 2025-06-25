@@ -18,12 +18,15 @@
     #name,
     #message {
       
-      color: red;
+      color: #EE00EE;
       font-weight: bold;
       text-shadow:
         0 0 1px yellow,
         0 0 2px yellow,
         0 0 3px yellow;
+        box-shadow:
+        0 0 5px lightseagreen,
+        0 0 10px lightseagreen;
     }
     
     body.light {
@@ -45,6 +48,16 @@
       transition: background 0.3s, color 0.3s;
     }
     
+    #galaxy-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background: #000;
+}
+
     .toggle-theme {
       position: fixed;
       top: 15px;
@@ -73,7 +86,7 @@
       0 0 10px navajowhite,
       0 0 15px navajowhite;
       animation: pulseglow 1s infinite alternate;
-      backdrop-filter: (10px);
+      backdrop-filter: blur(10px);
     }
     
     @keyframes pulseglow {
@@ -166,8 +179,8 @@
       user-select: none;
       margin: 10px 0;
       box-shadow:
-        0 0 5px red,
-        0 0 10px greenyellow;
+        0 0 5px lightseagreen,
+        0 0 10px lightseagreen;
       border-radius: 10px;
     }
     
@@ -215,6 +228,9 @@
 </head>
 
 <body>
+  
+  <canvas id="galaxy-bg"></canvas>
+  
   <div class="menu-wrapper">
     <div id="hamburger" class="hamburger">
       <span></span>
@@ -251,7 +267,7 @@
       <span class="emoji">👙</span>
     </div>
     <textarea id="message" placeholder="Write something..." required></textarea>
-    <button type="submit" style="display: block; margin: 20px auto;">Post Comment</button>
+    <button type="submit" class="text1-shadow box-effect" style="display: block; margin: 20px auto;">👉Post Comment👈</button>
   </form>
   
   <div id="commentsList"></div>
@@ -407,6 +423,7 @@
     setTheme(saved);
   </script>
   <script src="script.js"></script>
+  <script src="stars.js"></script>
 </body>
 
 </html>
