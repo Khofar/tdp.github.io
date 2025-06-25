@@ -4,28 +4,40 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>About TDP Alliance</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" href="style.css" />
 	<style>
 		body {
-			background: black;
-			
+			background: transparent;
 			font-family: "Orbitron", sans-serif;
 			padding: 20px;
 			text-align: center;
 		}
-    
-    .lang-switcher {
-      margin: 20px 0;
-    }
-    select {
-      font-size: 18px;
-      padding: 8px 12px;
-      background: #222;
-      color: #fff;
-      border: 1px solid #555;
-      border-radius: 5px;
-    }
+		
+		#galaxy-bg {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 100vh;
+			z-index: -1;
+			background: #000;
+		}
+
+
+		.lang-switcher {
+			margin: 20px 0;
+		}
+		
+		select {
+			font-size: 18px;
+			padding: 8px 12px;
+			background: #222;
+			color: #fff;
+			border: 1px solid #555;
+			border-radius: 5px;
+		}
+		
 		a.glow-effect {
 			width: 90%;
 			max-width: 600px;
@@ -117,20 +129,23 @@
 </head>
 
 <body>
-	  <div class="lang-switcher">
-  <select id="languageSelect">
-    <option value="en">🇺🇸 English</option>
-    <option value="fr">🇫🇷 Français</option>
-    <option value="ar">🇸🇦 العربية</option>
-    <option value="es">🇪🇸 Español</option>
-    <option value="de">🇩🇪 Deutsch</option>
-    <option value="ru">🇷🇺 Русский</option>       <!-- Russian -->
-    <option value="ja">🇯🇵 日本語</option>         <!-- Japanese -->
-    <option value="pl">🇵🇱 Polski</option>        <!-- Polish -->
-    <option value="nl">🇳🇱 Nederlands</option>    <!-- Dutch -->
-  </select>
-</div>
-  
+	
+	<canvas id="galaxy-bg"></canvas>
+	
+	<div class="lang-switcher">
+		<select id="languageSelect">
+			<option value="en">🇺🇸 English</option>
+			<option value="fr">🇫🇷 Français</option>
+			<option value="ar">🇸🇦 العربية</option>
+			<option value="es">🇪🇸 Español</option>
+			<option value="de">🇩🇪 Deutsch</option>
+			<option value="ru">🇷🇺 Русский</option> <!-- Russian -->
+			<option value="ja">🇯🇵 日本語</option> <!-- Japanese -->
+			<option value="pl">🇵🇱 Polski</option> <!-- Polish -->
+			<option value="nl">🇳🇱 Nederlands</option> <!-- Dutch -->
+		</select>
+	</div>
+	
 	<div class="menu-wrapper">
 		<div id="hamburger" class="hamburger">
 			<span></span>
@@ -172,8 +187,10 @@
 	</div>
 	
 	<a class="back-link" href="index.html">⬅ Back to Main Page</a>
-
+	
 	<script src="script.js"></script>
 	<script src="translate.js"></script>
-	</body>
+	<script src="stars.js"></script>
+</body>
+
 </html>
