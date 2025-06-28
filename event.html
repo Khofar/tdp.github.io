@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>TDP Events</title>
 	<link rel="stylesheet" href="style.css" />
-	<script src="script.js" defer></script>
+	
 	<style>
 		.event-list {
 			text-align: left;
@@ -23,36 +23,13 @@
 			border-radius: 15px;
 			box-shadow: 0 0 20px #00FF82;
 			color: #00FF63;
+			text-align: center;
 		}
 		
-		h1 {
+		.event-html h1 {
 			font-weight: bold;
-			color: #BFAC2D;
-			text-shadow:
-				0 0 1px #FF0069,
-				0 0 2px #FF0069,
-				0 0 3px #FF0069,
-				0 0 4px #FF0069;
-			animation: textpulse 2s infinite alternate;
-			backdrop-filter: (10px);
-		}
-		
-		@keyframes textpulse {
-			from {
-				text-shadow:
-					0 0 1px #FF0069,
-					0 0 2px #FF0069,
-					0 0 3px #FF0069,
-					0 0 4px #FF0069;
-			}
-			
-			to {
-				text-shadow:
-					0 0 4px #ee00ee,
-					0 0 8px #ee00ee,
-					0 0 12px #ee00ee,
-					0 0 16px #ee00ee;
-			}
+			color: black;
+			filter: drop-shadow(0 0 1px red) drop-shadow(0 0 2px red) drop-shadow(0 0 3px red);
 		}
 		
 		.menu-wrapper {
@@ -166,79 +143,52 @@
 		body {
 			text-align: center;
 		}
-		p {
+		
+		.event-html p {
 			text-align: center;
-			color: pink;
 			font-weight: bold;
-			text-shadow: 0 0 5px red, 0 0 10px red;
+			color: white;
+			filter: drop-shadow(0 0 1px red) drop-shadow(0 0 2px red) drop-shadow(0 0 3px red);
 		}
-		.highlights {
-			color: yellow;
+		span {
+			color: gold;
+			filter: 
+			drop-shadow(0 0 1px red)
+			drop-shadow(0 0 2px red);
 			
 		}
-		
-		h3,
-		h2 {
-			font-weight: bold;
-			text-align: center;
-			color: darkorange;
-			size: 88px;
-			text-shadow: 0 0 5px red, 0 0 10px red;
-		}
-		
-		.back-link {
-			display: inline-block;
-			margin-top: 30px;
-			background: #ffcc00;
-			color: #000;
-			padding: 10px 20px;
-			text-decoration: none;
-			font-weight: bold;
-			border-radius: 5px;
-			transition: 0.3s;
-		}
-		
-		.shadow-text {
-			color: orangered;
-			font-size: 20px;
-			font-weight: bold;
-			text-shadow:
-				0 0 2px red,
-				0 0 5px orangered,
-				0 0 10px orangered,
-				0 0 15px orange;
-			animation: pulseGlow 1s infinite alternate;
-		}
-		
-		@keyframes pulseGlow {
-			from {
-				text-shadow:
-					0 0 2px red,
-					0 0 5px orangered,
-					0 0 10px orangered,
-					0 0 15px orange;
+			
+			.back-link {
+				display: inline-block;
+				margin-top: 30px;
+				background: #ffcc00;
+				color: #000;
+				padding: 10px 20px;
+				text-decoration: none;
+				font-weight: bold;
+				border-radius: 5px;
+				transition: 0.3s;
 			}
 			
-			to {
-				text-shadow:
-					0 0 5px red,
-					0 0 10px orangered,
-					0 0 20px orange,
-					0 0 30px yellow;
+			
+			strong {
+				color: #ffd300;
 			}
-		}
-		
-		strong {
-			color: #ffd300;
-		}
-		
-		.back-link:hover {
-			background: #00ffde;
-		}
+			
+			.back-link:hover {
+				background: #00ffde;
+			}
+			
+			.event-html h2 {
+				font-weight: bold;
+				color: black;
+				filter: drop-shadow(0 0 1px red) drop-shadow(0 0 2px red) drop-shadow(0 0 3px red);
+			}
+			
 	</style>
 </head>
 
-<body>
+<body class="event-html">
 	<div class="menu-wrapper">
 		<div id="hamburger" class="hamburger">
 			<span></span><span></span><span></span>
@@ -256,36 +206,42 @@
 	</div>
 	<br><br>
 	<span <h1 style="background: blue; color: red; font-size: 22px;font-weight: bold; border-radius: 30px; padding: 10px;">🔥 TDP Events 🔥</h1></span>
-	<h1 style="margin-bottom: -5px;">⚠️ WOW</h1><br>
-	<div style="color: greenyellow; font-size: 18px" class="shadow-text" id="countdown1">⏳ Loading...</div>
-	<br>
-	<h1 style="margin-bottom: -5px;">⚔️ REEF</h1><br>
-	<div style="color: greenyellow ; font-size: 18px" class="shadow-text" id="countdown2">⏳ Loading...</div>
-	<br>
-	<h1 style="margin-bottom: -5px;">👻 SPECTER RAID</h1><br>
-	<div style="color: greenyellow ; font-size: 18px" class="shadow-text" id="countdown3">⏳ Loading...</div>
+	<br><br>
+	<div class="event-html">
+		
+		<h1>⚠️WOW</h1>
+		<p id="countdown1">⏳ Loading...</p>
+		
+		<h1>⚔️REEF</h1>
+		<p id="countdown2">⏳ Loading...</p>
+		
+		<h1>👻SPECTER RAID</h1>
+		<p id="countdown3">⏳ Loading...</p>
+	</div>
 	
 	<ul class="event-list">
 		<li>
 			<h3>⚔WAR OF WATER :</h3>
-			<p>WEEKLY (MVP)</p> <p class="highlights">LOADING...</p>
+			<p>WEEKLY (MVP)</p>
+			<p class="highlights">LOADING...</p>
 		</li>
 		<li>
 			<h3>🎯 REEF EVENT :</h3>
 			<p>
-				WEEKLY (MVP) <p class="highlights">LOADING...</p>
+				WEEKLY (MVP)
+			<p class="highlights">LOADING...</p>
 			</p>
 		</li>
 	</ul>
 	
 	<ul class="event-list">
 		<li>
-		<h3>
-			🏆 MVP of the Week : <span style="color: #ffd700">KAHLITA</span>
-		</h3>
-		
-		<p>THE MOST CUTIE AND CHOCOLITA</p>
-	</li>
+			<h3>
+				🏆 MVP of the Week : <span>KAHLITA</span>
+			</h3>
+			
+			<p>THE MOST CUTIE AND CHOCOLITA</p>
+		</li>
 	</ul>
 	
 	<form action="https://formspree.io/f/xdkzzekr" method="POST">
@@ -297,6 +253,7 @@
 	</form>
 	
 	<a class="back-link ; glow-effect" style="color: blue" href="index.html">⬅ Back to Main Page</a>
+	<script src="script.js" defer></script>
 </body>
 
 <script>
@@ -370,5 +327,6 @@
 		setInterval(updateCountdown, 1000);
 	});
 </script>
+<script src="script.js" defer></script>
 
 </html>
