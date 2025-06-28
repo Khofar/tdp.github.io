@@ -23,29 +23,29 @@
 			width: 90%;
 			margin: auto;
 		}
-		/*-----\\\\\|||||/////-----*/
+		
 		img {
 			filter:
 				drop-shadow(0 0 1px white) drop-shadow(0 0 2px white);
 		}
-		/*-----\\\\\|||||/////-----*/
+		
 		.photos img {
 			height: 100px;
 			width: 150px;
 			object-fit: contain;
 			border-radius: 20px;
 		}
-		/*-----\\\\\|||||/////-----*/
+		
 		p {
 			color: white;
 			filter: drop-shadow(0 0 1px red) drop-shadow(0 0 2px red);
 			letter-spacing: px;
+			
 		}
-		/*-----\\\\\|||||/////-----*/
 	</style>
 </head>
 
-<body class="index-html">
+<body>
 	<div class="menu-wrapper">
 		<div id="hamburger" class="hamburger">
 			<span></span>
@@ -64,67 +64,44 @@
 			<a href="mix.html">Mix 🔥</a>
 		</nav>
 	</div>
-	<!-- ----\\\\||||////---- -->
+	
+	
 	<h1 class="fire-title">((&#123; TDP &#125;))</h1>
-	<!-- ----\\\\||||////---- -->
 	<hr />
-	<!-- ----\\\\||||////---- -->
 	<p class="rainbow-text">WE ARE THE BEST</p>
-	<!-- ----\\\\||||////---- -->
 	<div>
 		<span class="text-shadow blue-shadow 
 		box1-effect">TDP #10185</span>
 	</div>
-	<!-- ----\\\\||||////---- -->
 	<hr>
-	<!-- ----\\\\||||////---- -->
 	<div class="photos">
 		<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/Dragons/F9388045-9DDB-4A65-99DF-95EE669450F3.png" alt="red inf dragon">
-		<!-- ----\\\\||||////---- -->
 		<div>
 			<p>TDP</p>
 			<p>DRAGONS</p>
 		</div>
-		<!-- ----\\\\||||////---- -->
 		<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/Dragons/E91ED7D6-0095-41BE-9F95-C11B3488E0CB.png" alt="bone dragon">
 	</div>
-	<!-- ----\\\\||||////---- -->
+	
 	<br><br>
-	<!-- ----\\\\||||////---- -->
+	
 	<div class="photos">
 		<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/Dragons/908435CB-DC70-41CF-9D8F-24B1B86F0413.png" alt="white distance dragon">
-		<!-- ----\\\\||||////---- -->
 		<div>
 			<p>TDP</p>
 			<p>DRAGONS</p>
 		</div>
-		<!-- ----\\\\||||////---- -->
-		<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/Dragons/1BEB8C91-6161-4881-837B-E93ADBBE2006.png" alt="yellow inf dragon">
+		<img sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 600px" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/Dragons/1BEB8C91-6161-4881-837B-E93ADBBE2006.png" alt="yellow inf dragon">
+		
 	</div>
-	<!-- ----\\\\||||////---- -->
-	<br><br>
-	<!-- ----\\\\||||////---- -->
-	<div class="photos">
-	<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/Dragons/261952DE-1006-4D32-BD7D-E53F76C78D39.png" alt="white distance dragon">
-	<!-- ----\\\\||||////---- -->
-	<div>
-		<p>TDP</p>
-		<p>DRAGONS</p>
-	</div>
-	<!-- ----\\\\||||////---- -->
-	<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/Dragons/56ED0176-D9E3-4321-AED2-B82169F2FD9F.png" alt="yellow inf dragon">
-</div>
-	<!-- ----\\\\||||////---- -->
 	<hr>
-	<!-- ----\\\\||||////---- -->
 	<img class="glow-effect" src="https://cdn.vectorstock.com/i/1000x1000/81/76/tdp-abstract-technology-logo-design-on-black-vector-44418176.webp" alt="TDP Logo" style="height: 150px" />
-	<!-- ----\\\\||||////---- -->
 	<hr />
-	<!-- ----\\\\||||////---- -->
+	
 	<div class="laser-cursor" id="laser"></div>
-	<!-- ----\\\\||||////---- -->
+	
 	<img class="glow-effect" src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2554670/capsule_616x353.jpg?t=1707106221" alt="Gallery Image 6" />
-	<!-- ----\\\\||||////---- -->
+	
 	
 	<script src="script.js"></script>
 </body>

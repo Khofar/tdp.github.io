@@ -14,12 +14,14 @@
 			padding: 20px;
 		}
 		
+		/*----------------//--------------*/
 		.contact-html h1 {
 			color: gold;
 			filter:
 				drop-shadow(0 0 1px blue) drop-shadow(0 0 2px blue) drop-shadow(0 0 3px blue);
 		}
 		
+		/*----------------//--------------*/
 		#galaxy-bg {
 			position: fixed;
 			top: 0;
@@ -30,30 +32,28 @@
 			background: #000;
 		}
 		
+		/*----------------//--------------*/
 		.contactimg-html {
-
-  margin: 40px auto;
-  width: fit-content;
-  border-radius: 20px;
-  box-shadow:
-    0 0 2px red,
-    0 0 4px red,
-    0 0 6px red;
-    animation: boxpulse 1s infinite alternate;
-    backdrop-filter: blur(10px);
-}
-
-.contactimg-html img {
-  width: 90%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 20px;
-  filter:
-    drop-shadow(0 0 2px white)
-    drop-shadow(0 0 4px white)
-    drop-shadow(0 0 6px white);
-}
-		
+			
+			margin: 40px auto;
+			width: fit-content;
+			border-radius: 20px;
+			box-shadow:
+				0 0 2px red,
+				0 0 4px red,
+				0 0 6px red;
+			animation: boxpulse 1s infinite alternate;
+		}
+		/*----------------//--------------*/
+		.contactimg-html img {
+			width: 90%;
+			max-width: 600px;
+			height: auto;
+			border-radius: 20px;
+			filter:
+				drop-shadow(0 0 2px white) drop-shadow(0 0 3px white) drop-shadow(0 0 4px white);
+		}
+		/*----------------//--------------*/
 		.contact-box {
 			background: #00000091;
 			border: 2px solid #FF0606;
@@ -66,9 +66,7 @@
 				0 0 15px lightseagreen,
 				0 0 30px lightseagreen;
 			animation: boxpulse 1s infinite alternate;
-			backdrop-filter: blur(10px);
 		}
-		
 		@keyframes boxpulse {
 			from {
 				box-shadow:
@@ -76,7 +74,6 @@
 					0 0 10px lightseagreen,
 					0 0 15px lightseagreen;
 			}
-			
 			to {
 				box-shadow:
 					0 0 10px #FF0000,
@@ -84,20 +81,20 @@
 					0 0 40px #FF0000;
 			}
 		}
-		
+		/*----------------//--------------*/
 		.contact-html p {
 			font-size: 1.1rem;
-			color: white;
+			color: yellow;
 			filter:
-				drop-shadow(0 0 1px red) drop-shadow(0 0 2px red);
+				drop-shadow(0 0 2px lightgreen) drop-shadow(0 0 3px lightgreen);
 			
 		}
-		
+		/*----------------//--------------*/
 		a {
 			color: #00ffff;
 			text-decoration: none;
 		}
-		
+		/*----------------//--------------*/
 		.back-link {
 			display: inline-block;
 			margin-top: 30px;
@@ -109,17 +106,25 @@
 			border-radius: 5px;
 			
 		}
-		
+		/*----------------//--------------*/
 		.back-link:hover {
 			background: #00cccc;
 		}
+		/*----------------//--------------*/
+		.contact-html h5 {
+			color: #007DFF;
+			font-size: 25px;
+			filter: drop-shadow(0 0 1px #FFDE00) drop-shadow(0 0 2px #FFDE00);
+		}
+		/*----------------//--------------*/
+		
 	</style>
 </head>
 
 <body class="contact-html">
 	
 	<canvas id="galaxy-bg"></canvas>
-	
+	<!-- -----------\\\|||///--------- -->
 	<div class="menu-wrapper">
 		<div id="hamburger" class="hamburger">
 			<span></span><span></span><span></span>
@@ -135,30 +140,35 @@
 			<a href="crown.html">Crown 👑</a>
 		</nav>
 	</div>
-	
+	<!-- -----------\\\|||///--------- -->
 	<h1>📞 Contact Us</h1>
+<!-- -----------\\\|||///--------- -->
 	<div class="contact-box">
-		<p>⬇️CLICK HERE⬇️</p>
+		<h5>⬇️CLICK HERE⬇️</h5>
 		<p>
 			Email:
 			<a href="mailto:criminal-tdp@gmail.com">criminal-tdp@gmail.com</a>
 		</p>
 		
-		<p>⬇️CLICK HERE⬇️</p>
-		
+		<h5>⬇️CLICK HERE⬇️</h5>
 		<p>
 			Discord:
 			<a style="color: #ff00ff" href="https://discord.gg/2aFVxBBX" target="_blank">TDP SERVER (optional)</a>
 		</p>
 	</div>
+	<!-- -----------\\\|||///--------- -->
 	<hr>
+	<!-- -----------\\\|||///--------- -->
 	<div class="contactimg-html">
-	<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/SKINS/F9643F84-7067-458A-91F8-CA8DC673A485.png" alt="TDP Logo" style="height: 200px;" />
+		<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/SKINS/F9643F84-7067-458A-91F8-CA8DC673A485.png" alt="TDP Logo" style="height: 200px;" />
 	</div>
+	<!-- -----------\\\|||///--------- -->
 	<div class="contactimg-html">
-	<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/SKINS/IMG_2932.png" alt="TDP Logo" style="height: 200px;" />
+		<img src="https://raw.githubusercontent.com/Khofar/tdp.github.io/refs/heads/main/SKINS/IMG_2932.png" alt="TDP Logo" style="height: 200px;" />
 	</div>
+	<!-- -----------\\\|||///--------- -->
 	<a class="back-link kho-effect" style="width: 200px;" href="index.html">⬅ Back to Main Page</a>
+	<!-- -----------\\\|||///--------- -->
 	<script src="script.js" defer></script>
 	<script src="stars.js" defer></script>
 	

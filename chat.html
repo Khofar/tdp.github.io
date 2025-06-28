@@ -14,7 +14,7 @@
       --accent: #00ff88;
       --timestamp: #aaa;
     }
-    
+    /* -------\\\\||||||////-------- */
     #name,
     #message {
       
@@ -28,7 +28,7 @@
         0 0 5px lightseagreen,
         0 0 10px lightseagreen;
     }
-    
+    /* -------\\\\||||||////-------- */
     body.light {
       --bg: #f5f5f5;
       --text: #111;
@@ -37,7 +37,7 @@
       --accent: #0077ff;
       --timestamp: #444;
     }
-    
+    /* -------\\\\||||||////-------- */
     body {
       width: 350px;
       margin: 0;
@@ -47,7 +47,7 @@
       color: var(--text);
       transition: background 0.3s, color 0.3s;
     }
-    
+    /* -------\\\\||||||////-------- */
     #galaxy-bg {
       position: fixed;
       top: 0;
@@ -57,7 +57,7 @@
       z-index: -1;
       background: #000;
     }
-    
+/* -------\\\\||||||////-------- */
     .toggle-theme {
       position: fixed;
       top: 15px;
@@ -73,14 +73,14 @@
       z-index: 9999;
       box-shadow: 0 0 8px var(--accent);
     }
-    
+    /* -------\\\\||||||////-------- */
     h2 {
       text-align: center;
       font-size: 24px;
       margin-bottom: 30px;
       color: #FF10B5;
     }
-    
+    /* -------\\\\||||||////-------- */
     .text1-shadow {
       0 0 5px navajowhite,
       0 0 10px navajowhite,
@@ -104,8 +104,7 @@
           0 0 30px navajowhite;
       }
     }
-    
-    /*here khofar*/
+    /* -------\\\\||||||////-------- */
     form {
       width: 100%;
       max-width: 100%;
@@ -136,7 +135,7 @@
           0 0 30px red;
       }
     }
-    
+    /* -------\\\\||||||////-------- */
     input,
     textarea {
       width: 100%;
@@ -152,7 +151,7 @@
       box-sizing: border-box;
       box-shadow: 0 0 10px red;
     }
-    
+    /* -------\\\\||||||////-------- */
     button {
       width: 100%;
       padding: 14px;
@@ -165,12 +164,12 @@
       cursor: pointer;
       transition: 0.3s;
     }
-    
+    /* -------\\\\||||||////-------- */
     button:hover {
       opacity: 0.9;
       transform: scale(1.02);
     }
-    
+    /* -------\\\\||||||////-------- */
     #emojiBar {
       display: flex;
       flex-wrap: wrap;
@@ -183,7 +182,7 @@
         0 0 10px lightseagreen;
       border-radius: 10px;
     }
-    
+    /* -------\\\\||||||////-------- */
     .emoji {
       cursor: pointer;
       transition: 0.2s;
@@ -191,15 +190,15 @@
       drop-shadow(0 0 3px white);
       
     }
-    
+    /* -------\\\\||||||////-------- */
     .emoji:hover {
       transform: scale(1.2);
     }
-    
+    /* -------\\\\||||||////-------- */
     #commentsList {
       margin-top: 30px;
     }
-    
+    /* -------\\\\||||||////-------- */
     .comment {
       background: var(--card);
       padding: 15px;
@@ -208,7 +207,7 @@
       border-left: 4px solid var(--accent);
       animation: fadeIn 0.4s ease;
     }
-    
+    /* -------\\\\||||||////-------- */
     .comment strong {
       color: var(--accent);
       display: block;
@@ -226,18 +225,18 @@
         transform: translateY(0);
       }
     }
-    
+    /* -------\\\\||||||////-------- */
     .chat-html h2 {
       filter: drop-shadow(0 0 3px blue) drop-shadow(0 0 6px blue);
     }
+    /* -------\\\\||||||////-------- */
   </style>
   
 </head>
-
 <body class="chat-html">
-  
+  <!-- ----------||||||||---------- -->
   <canvas id="galaxy-bg"></canvas>
-  
+  <!-- ----------||||||||---------- -->
   <div class="menu-wrapper">
     <div id="hamburger" class="hamburger">
       <span></span>
@@ -255,12 +254,13 @@
       <a href="crown.html">Crown 👑</a>
     </nav>
   </div>
-  
+  <!-- ----------||||||||---------- -->
   <button class="toggle-theme" id="themeToggle">☀️</button>
   <h2>💬 Leave a Comment</h2>
-  
+  <!-- ----------||||||||---------- -->
   <form id="commentForm">
     <input type="text" id="name" placeholder="Your name" required>
+    <!-- ----------||||||||---------- -->
     <div id="emojiBar">
       <span class="emoji">🔥</span>
       <span class="emoji">😂</span>
@@ -273,12 +273,14 @@
       <span class="emoji">❤️</span>
       <span class="emoji">👙</span>
     </div>
+    <!-- ----------||||||||---------- -->
     <textarea id="message" placeholder="Write something..." required></textarea>
+    <!-- ----------||||||||---------- -->
     <button type="submit" class="text1-shadow box-effect" style="display: block; margin: 20px auto;">👉Post Comment👈</button>
   </form>
-  
+  <!-- ----------||||||||---------- -->
   <div id="commentsList"></div>
-  
+  <!-- ----------||||||||---------- -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
     import {
@@ -291,7 +293,7 @@
       deleteDoc,
       doc
     } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
-    
+    // --------- //
     const firebaseConfig = {
       apiKey: "AIzaSyCMw6LUtfaYFh8-wvkT54yDykieav7naV8",
       authDomain: "khofar-site-comments.firebaseapp.com",
@@ -300,7 +302,7 @@
       messagingSenderId: "853499937990",
       appId: "1:853499937990:web:d6150ffaa6c0b8b10b83c7"
     };
-    
+    // -------- //
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
     const commentsRef = collection(db, "comments");
@@ -320,7 +322,7 @@
       });
       form.reset();
     });
-    
+    // --------- //
     function showDelete(commentElement, commentId) {
       if (commentElement.querySelector(".delete-btn")) return;
       const del = document.createElement("button");
@@ -345,7 +347,7 @@
       };
       commentElement.appendChild(del);
     }
-    
+    // --------- //
     const q = query(commentsRef, orderBy("timestamp", "desc"));
     
     onSnapshot(q, (snapshot) => {
@@ -368,7 +370,7 @@
             hour12: true
           }).format(dateObj) :
           '';
-        
+        // ---------- //
         comment.innerHTML = `
           <strong>${data.name}</strong>
           <p>${data.message}</p>

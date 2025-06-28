@@ -5,12 +5,13 @@
 	<meta charset="UTF-8">
 	<title>Crown Info Viewer</title>
 	<link rel="stylesheet" href="style.css" />
-
+	
 	<style>
 		.lang-switcher {
 			margin: 20px 0;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		select {
 			font-size: 25px;
 			padding: 8px 12px;
@@ -20,6 +21,7 @@
 			border-radius: 5px;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		img {
 			max-width: 90%;
 			height: auto;
@@ -29,6 +31,7 @@
 			transition: transform 0.3s ease;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		#overlay {
 			display: none;
 			position: fixed;
@@ -42,6 +45,7 @@
 			z-index: 9999;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		#overlay img {
 			width: auto;
 			max-width: 95%;
@@ -51,7 +55,7 @@
 			box-shadow: 0 0 25px crimson;
 		}
 		
-		
+		/* -----\\\\\|||||/////----- */
 		.menu-wrapper {
 			position: fixed;
 			padding: 10px 0;
@@ -61,6 +65,7 @@
 			flex-wrap: wrap;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		.menu-links a {
 			color: white;
 			text-decoration: none;
@@ -70,27 +75,29 @@
 			transition: 0.5s;
 		}
 		
-		
+		/* -----\\\\\|||||/////----- */
 		span {
 			background-color: red;
 			border: 2px solid lightblue;
 			border-radius: 10px;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		p {
 			font-size: 40px;
 			color: greenyellow;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		.crown-html h1 {
 			font-size: 60px;
 			color: navajowhite;
 			filter:
-			drop-shadow(0 0 5px #FF0000)
-			drop-shadow(0 0 10px #FF0000);
+				drop-shadow(0 0 5px #FF0000) drop-shadow(0 0 10px #FF0000);
 			backdrop-filter: blur(100px);
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		iframe {
 			border: 3px solid crimson;
 			border-radius: 10px;
@@ -99,6 +106,7 @@
 			box-shadow: 0 0 15px crimson;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		#downloadBtn {
 			display: inline-block;
 			background-color: #222;
@@ -114,16 +122,19 @@
 			box-shadow: 0 0 10px crimson;
 		}
 		
+		/* -----\\\\\|||||/////----- */
 		#downloadBtn:hover {
 			background-color: crimson;
 			color: white;
 			box-shadow: 0 0 20px crimson;
 		}
+		
+		/* -----\\\\\|||||/////----- */
 	</style>
 </head>
 
 <body class="crown-html">
-	
+	<!-- ----\\\\||||////---- -->
 	<div class="lang-switcher">
 		<select id="languageSelect">
 			<option value="en">🇺🇸 English</option>
@@ -137,7 +148,7 @@
 			<option value="nl">🇳🇱 Nederlands</option> <!-- Dutch -->
 		</select>
 	</div>
-	
+	<!-- ----\\\\||||////---- -->
 	<div class="menu-wrapper">
 		<div style="width: 60px ; height: 60px" id="hamburger" class="hamburger">
 			<span></span><span></span><span></span>
@@ -153,25 +164,32 @@
 			<a href="crown.html">Crown 👑</a>
 		</nav>
 	</div>
-	
+	<!-- ----\\\\||||////---- -->
 	<h1>👑 Crown Information</h1>
-	
+	<!-- ----\\\\||||////---- -->
 	<p> <span> Scroll through the sacred guide below: </span> </p>
+	<!-- ----\\\\||||////---- -->
 	<br>
+	<!-- ----\\\\||||////---- -->
 	<iframe class="box1-effect" src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Khofar/tdp.github.io/main/Folder/Crown%20Information-%20MADE%20BY%20(KAHLITA).pdf&embedded=true" width="100%" height="800px">
 	</iframe>
+	<!-- ----\\\\||||////---- -->
 	<br><br>
+	<!-- ----\\\\||||////---- -->
 	<p>
 		<a class="box1-effect" style="font-size: 40px" href="https://docs.google.com/gview?url=https://raw.githubusercontent.com/Khofar/tdp.github.io/main/Folder/Crown%20Information-%20MADE%20BY%20(KAHLITA).pdf" download id="downloadBtn">
 			💾 Save the Crown Scroll
 		</a>
 	</p>
+	<!-- ----\\\\||||////---- -->
 	<br><br>
+	<!-- ----\\\\||||////---- -->
 	<img class="box1-effect" style="border-radius: 30px; width: 85%;" src="https://raw.githubusercontent.com/Khofar/tdp.github.io/main/Folder/IMG_9142.jpeg" alt="Gallery Image 1" alt="Click Me" onclick="openFullscreen(this)">
+	<!-- ----\\\\||||////---- -->
 	<div id="overlay" onclick="closeFullscreen()">
 		<img id="fullscreen-img" src="">
 	</div>
-	
+	<!-- ----\\\\||||////---- -->
 	<script>
 		function openFullscreen(img) {
 			const overlay = document.getElementById("overlay");
@@ -179,7 +197,7 @@
 			fullImg.src = img.src;
 			overlay.style.display = "flex";
 		}
-		
+		//----------//
 		function closeFullscreen() {
 			document.getElementById("overlay").style.display = "none";
 		}
